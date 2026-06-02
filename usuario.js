@@ -1,4 +1,4 @@
-class Usuario {
+export class Usuario {
     constructor(nombre, email, rol = "cliente", activo = true) {
         this.nombre = nombre
         this.email = email
@@ -26,14 +26,3 @@ class Usuario {
         `;
     }
 }
-
-let user1 = new Usuario("Ana", "ana@email.com");
-let user2 = new Usuario("Carlos", "carlos@email.com", "admin");
-
-console.log(user1.saludo());
-console.log(user2.saludo());
-
-console.log(user1.desactivar());
-
-console.log(user1.resumen());
-console.log(user2.resumen());
